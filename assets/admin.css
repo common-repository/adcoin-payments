@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Open+Sans');
+
+/*******************************************************************************
+ * Color scheme (You can change this to your own preference)
+ ******************************************************************************/
+:root {
+  --adcoin-payments-primary:      #0facf3;
+  --adcoin-payments-background:   #e7f6fd;
+  --adcoin-payments-input-border: darkgrey;
+}
+
+
+
+/*******************************************************************************
+ * Global styling
+ ******************************************************************************/\
+#post-body-content {
+  width: 100% !important;
+}
+
+select#adcoin-payments-alignment, input#adcoin-payments-price, select#adcoin-payments-success-url, select#adcoin-payments-cancel-url {
+  width: 100%;
+}
+
+#TB_window {
+  overflow: scroll;
+}
+
+.adcoin-payments-admin-button {
+	background-color: var(--adcoin-payments-primary) !important; /* #03a9f5 */
+	color: #eee !important;
+	font-weight: bold;
+}
+
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 37px;
+	height: 25px;
+  top: 1px;
+}
+
+.switch input {display:none;}
+
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 21px;
+	width: 21px;
+	left: 2px;
+	bottom: 2px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: var(--adcoin-payments-primary);
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px var(--adcoin-payments-primary);
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(12px);
+	-ms-transform: translateX(12px);
+	transform: translateX(12px);
+}
+
+/* Rounded sliders */
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+
+
+/**
+ * Pay button
+ */
+.adcoin-payments-button {
+	/* positioning */
+	float: left;
+	position: relative;
+	padding: .5rem 1rem;
+	display: inline-block;
+	line-height: 30px !important;
+	vertical-align: middle;
+
+	/* size */
+	width: 100%;
+  height: 42px !important;
+
+	/* coloring and border styling */
+  background-color: #0facf3;
+  border-color: #0facf3;
+	border: 1px solid transparent;
+	border-radius: 10rem;
+
+	/* animation */
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.adcoin-payments-button input {
+	/* text settings */
+	font-family: "Open Sans", sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1.7px;
+  text-align: center;
+	/* styling */
+	color: #fff;
+	border: 1px solid #a5e2ff;
+	background: none;
+}
+.adcoin-payments-button input::placeholder {
+	color: #cfeaf7;
+	font-style: italic;
+}
+.adcoin-payments-button input:-ms-input-placeholder {
+	color: #cfeaf7;
+	font-style: italic;
+}
+.adcoin-payments-button input::-ms-input-placeholder {
+	color: #cfeaf7;
+	font-style: italic;
+}
+
+
+
+/**
+ * Settings page
+ */
+.adcoin-payments-settings-title {
+	background-color: #03a9f5;
+	padding: 8px;
+	color: #eee;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.adcoin-payments-settings-contents {
+	background-color: #fff;
+	border: 1px solid #e5e5e5;
+	padding: 5px;
+}
+
+.adcoin-payments-settings-button {
+	background-color: #03a9f5 !important;
+	font-size: 17px;
+	line-height: 28px;
+	height: 32px;
+}
+
+
+
+/**
+ * Form designer
+ */
+#adcoin-payments-form-designer {
+	display: none;
+}
+
+
+
+/*******************************************************************************
+* Form designer preview
+******************************************************************************/
+.adcoin-payments-preview {
+  /* text styling */
+  font-family: "Dosis", sans-serif;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+
+  /* align elements in div and set width */
+  display: table;
+  padding: 4px;
+  width: 256px;
+
+  /* border styling and background color */
+  border: 2px solid var(--adcoin-payments-form);
+  border-radius: 4px;
+  background-color: var(--adcoin-payments-form-background);
+}
+
+#adcoin-payments-preview-title {
+	/* font */
+	font-family: 'Dosis', sans-serif;
+	font-size: 1.618em;
+	color: #292929;
+	/* background and border styling */
+  background: none;
+  border: 2px dotted var(--adcoin-payments-input-border);
+  /* overlay input element above parent */
+  position: relative;
+  z-index: 2;
+  width: 85%;
+  margin: auto auto 3px auto;
+}
+
+.adcoin-payments-preview-field {
+	/* positioning and size */
+	float: left;
+  width: 200px !important;
+	/* border styling */
+	/* field styling */
+	font-family: 'Dosis', sans-serif;
+  outline: 0;
+	padding: .6180469716em;
+  background-color: #fff !important;
+  color: #43454b;
+  box-sizing: border-box;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.125);
+  -webkit-appearance: none;
+}
+
+.adcoin-payments-disabled-field {
+  opacity: 0.5;
+  filter: alpha(opacity=50) /* IE8 and earlier */
+}
+
+.adcoin-payments-preview-switch {
+	margin-top: 6px;
+}
+
+#adcoin-payments-button-text {
+  /* background and border styling */
+  background: var(--adcoin-payments-background);
+  border: 2px dotted var(--adcoin-payments-input-border);
+}
+
+
+
+
+/**
+ * Form designer table styling
+ */
+.adcoin-payments-designer-table {
+  width: 600px;
+}
+.adcoin-payments-designer-table tr {
+	background-color: #eee;
+}
+.adcoin-payments-designer-table tr:nth-child(odd) {
+	background-color: #f7f7f7;
+}
+.adcoin-payments-designer-table input[type="button"]  {
+	width: 100%;
+}
+
+/**
+ * Form designer custom fields
+ */
+.adcoin-payments-preview-field-remove {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+  width: 24px;
+  height: 24px;
+  margin-top: 8px;
+  padding: 0px;
+  /* background-color: var(--adcoin-payments-primary); */
+  color: red;
+  border: none;
+  border-radius: 16px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.adcoin-payments-preview-field-remove:hover {
+  /* background-color: var(--adcoin-payments-button-hover); */
+}
+
+.adcoin-payments-preview-field-remove:active {
+  background-color: var(--adcoin-payments-background);
+  /* color: var(--adcoin-payments-primary); */
+}
+
+.adcoin-payments-preview-custom-fields {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+
+/**
+ * Payment list
+ */
+.adcoin-payments-status {
+	display: -webkit-inline-box;
+	display: -webkit-inline-flex;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	line-height: 2.5em;
+	border-radius: 4px;
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	margin: -.25em 0;
+	cursor: inherit!important;
+	white-space: nowrap;
+	max-width: 100%;
+}
+
+.adcoin-payments-status[value="0"] {
+	background: #e5e5e5;
+	color: #525252;
+}
+
+.adcoin-payments-status[value="1"] {
+	background: #f4bf42;
+	color: #7c6120;
+}
+
+.adcoin-payments-status[value="2"] {
+	background: #c6e1c6;
+	color: #5b841b;
+}
+
+.adcoin-payments-status[value="3"] {
+	background: #dac6e1;
+	color: #681b84;
+}
+
+.adcoin-payments-status[value="4"] {
+  background: #e1c6c6;
+	color: #841b1b;
+}
+
+.adcoin-payments-status>span {
+	margin: 0 1em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}

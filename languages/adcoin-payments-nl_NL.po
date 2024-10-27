@@ -1,0 +1,396 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: adcoin-payments\n"
+"POT-Creation-Date: 2018-04-10 10:08+0200\n"
+"PO-Revision-Date: 2018-04-10 10:08+0200\n"
+"Last-Translator: \n"
+"Language-Team: AdCoin Click B.V.\n"
+"Language: nl_NL\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: class/callback-handler.php\n"
+"X-Poedit-SearchPath-1: class/form-data.php\n"
+"X-Poedit-SearchPath-2: class/payment-form.php\n"
+"X-Poedit-SearchPath-3: class/payment-list.php\n"
+"X-Poedit-SearchPath-4: class/plugin.php\n"
+"X-Poedit-SearchPath-5: class/settings.php\n"
+"X-Poedit-SearchPath-6: class/admin/admin-backend.php\n"
+"X-Poedit-SearchPath-7: class/admin/editor-button.php\n"
+"X-Poedit-SearchPath-8: includes/functions.php\n"
+"X-Poedit-SearchPath-9: views/payment-form.php\n"
+"X-Poedit-SearchPath-10: views/msg/no-api-key.php\n"
+"X-Poedit-SearchPath-11: views/msg/settings-updated.php\n"
+"X-Poedit-SearchPath-12: views/msg/status-updated.php\n"
+"X-Poedit-SearchPath-13: views/form-designer/custom-field.php\n"
+"X-Poedit-SearchPath-14: views/form-designer/designer.php\n"
+"X-Poedit-SearchPath-15: views/form-designer/media-button.php\n"
+"X-Poedit-SearchPath-16: views/form-designer/preview.php\n"
+"X-Poedit-SearchPath-17: views/form-designer/properties.php\n"
+"X-Poedit-SearchPath-18: views/admin-menu/payments.php\n"
+"X-Poedit-SearchPath-19: views/admin-menu/settings.php\n"
+"X-Poedit-SearchPath-20: views/admin-menu/view-payment.php\n"
+
+#: class/admin/admin-backend.php:35 class/admin/admin-backend.php:36
+#: views/admin-menu/payments.php:6
+msgid "AdCoin Payments"
+msgstr "AdCoin Betalingen"
+
+#: class/admin/admin-backend.php:48 views/admin-menu/settings.php:2
+msgid "AdCoin Payments Settings"
+msgstr "Instellingen van AdCoin Betalingen"
+
+#: class/admin/admin-backend.php:49 views/admin-menu/settings.php:23
+msgid "Settings"
+msgstr "Instellingen"
+
+#: class/admin/admin-backend.php:69 class/payment-list.php:33
+msgid "Payments"
+msgstr "Betalingen"
+
+#: class/admin/admin-backend.php:92 class/admin/admin-backend.php:108
+msgid "You do not have the sufficient permissions to view this page."
+msgstr "U bent niet bevoegd om deze pagina in te zien."
+
+#: class/admin/admin-backend.php:114 views/admin-menu/view-payment.php:7
+msgid "Invalid request."
+msgstr "Foutieve request."
+
+#: class/admin/admin-backend.php:154
+msgid ""
+"Error! Nonce security check failed! Go back to the settings menu and save "
+"the settings again."
+msgstr ""
+"Er is een fout opgetreden! Beveiligingscheck mislukt! Ga terug naar het "
+"instellingsmenu en sla de instellingen opnieuw op."
+
+#: class/payment-list.php:13
+msgid "Awaiting payment"
+msgstr "Betaling in afwachting"
+
+#: class/payment-list.php:14
+msgid "Paid (unconfirmed)"
+msgstr "Betaald (onbevestigd)"
+
+#: class/payment-list.php:15
+msgid "Payment confirmed"
+msgstr "Betaling bevestigd"
+
+#: class/payment-list.php:16
+msgid "Completed"
+msgstr "Afgerond"
+
+#: class/payment-list.php:17
+msgid "Failed (timed out)"
+msgstr "Mislukt (wachttijd verstreken)"
+
+#: class/payment-list.php:32
+msgid "Payment"
+msgstr "Betaling"
+
+#: class/payment-list.php:185 class/payment-list.php:270
+msgid "Delete"
+msgstr "Verwijder"
+
+#: class/payment-list.php:247
+msgid "No payments found."
+msgstr "Geen betalingen beschikbaar."
+
+#: class/payment-list.php:322 views/form-designer/preview.php:16
+msgid "Name"
+msgstr "Naam"
+
+#: class/payment-list.php:323
+msgid "Date"
+msgstr "Datum"
+
+#: class/payment-list.php:324 views/admin-menu/view-payment.php:50
+msgid "Status"
+msgstr ""
+
+#: class/payment-list.php:325 views/admin-menu/view-payment.php:62
+msgid "Amount"
+msgstr "Aantal"
+
+#: views/admin-menu/settings.php:7
+msgid "Usage"
+msgstr "Uitleg"
+
+#: views/admin-menu/settings.php:11
+msgid ""
+"In the page or post editor, you will see a new button called \"AdCoin "
+"Payment Form\" located above the text area beside the \"Add Media\" button."
+"<br>\n"
+"\t\t\t\tWith this button you can create shortcodes that will show up as "
+"payment forms on your website.<br>\n"
+"\t\t\t\t<br>\n"
+"\t\t\t\tYou can place as many forms in a post or page as you want. In order "
+"to remove a button, just remove the shortcode text in your post or page."
+msgstr ""
+"In de bericht- of pagina bewerker zal u een nieuwe knop genaamd \"AdCoin "
+"Betalingsformulier\" zien.<br>\n"
+"Via deze knop kunt u <i>shortcodes</i> creeëren die op uw website worden "
+"weergegeven als betalingsformulier.<br>\n"
+"<br>\n"
+"U kunt zoveel betalingsformulieren in een bericht of pagina plaatsen als u "
+"wilt. Als u de knop wilt verwijderen, verwijdert u gewoon de <i>shortcode</"
+"i> text uit uw bericht of pagina."
+
+#: views/admin-menu/settings.php:31
+msgid "AdCoin Wallet API Key"
+msgstr ""
+
+#: views/admin-menu/settings.php:35
+msgid ""
+"This is the API key from your AdCoin Wallet.<br>You can find the key in your "
+"<a href=\"https://wallet.getadcoin.com\">AdCoin Web Wallet</a> under your "
+"name > \"API Key\"."
+msgstr ""
+"Dit is de API-sleutel van uw AdCoin Wallet.<br>Deze is te vinden op de <a "
+"href=\"https://wallet.getadcoin.com\">AdCoin Web Wallet</a> onder uw naam > "
+"\"API Key\"."
+
+#: views/admin-menu/settings.php:43
+msgid "Custom Form CSS"
+msgstr "Aangepaste betalingsformulier CSS"
+
+#: views/admin-menu/settings.php:47
+msgid ""
+"When the field above is not empty, the default CSS will be replaced by your "
+"custom CSS.<br>\n"
+"\t\t\t\t\t\t\t\tFor reference, the default stylesheet is located in:"
+msgstr ""
+"Wanneer het bovenstaande veld niet leeg is, zal de standaard CSS vervangen "
+"worden door uw eigen CSS.<br>\n"
+"Ter referentie is de standaard CSS stylesheet is te vinden in:"
+
+#: views/admin-menu/settings.php:55
+msgid "Debug mode"
+msgstr "Debug-modus"
+
+#: views/admin-menu/settings.php:62
+msgid "WARNING! Developers only!"
+msgstr "WAARSCHUWING: Alleen voor ontwikkelaars!"
+
+#: views/admin-menu/settings.php:69 views/admin-menu/view-payment.php:96
+msgid "Update"
+msgstr "Bijwerken"
+
+#: views/admin-menu/view-payment.php:31
+msgid "Payment Information"
+msgstr "Betalingsinformatie"
+
+#: views/admin-menu/view-payment.php:34
+msgid "Created at"
+msgstr "Geopend op"
+
+#: views/admin-menu/view-payment.php:43 views/form-designer/preview.php:28
+msgid "Email"
+msgstr "Email"
+
+#: views/admin-menu/view-payment.php:68
+msgid "Additional Fields"
+msgstr "Aangepaste Velden"
+
+#: views/admin-menu/view-payment.php:72
+msgid "Field"
+msgstr "Veld"
+
+#: views/admin-menu/view-payment.php:73
+msgid "Value"
+msgstr "Waarde"
+
+#: views/form-designer/custom-field.php:1
+msgid "Custom Field"
+msgstr "Aangepast Veld"
+
+#: views/form-designer/custom-field.php:7
+msgid "Description"
+msgstr "Beschrijving"
+
+#: views/form-designer/custom-field.php:12
+msgid "Field description"
+msgstr "Veld beschrijving"
+
+#: views/form-designer/custom-field.php:21
+msgid "Required"
+msgstr "Verplicht"
+
+#: views/form-designer/custom-field.php:25
+msgid "Is the field required?"
+msgstr "Is dit veld verplicht?"
+
+#: views/form-designer/custom-field.php:32
+msgid "Add Custom Field"
+msgstr "Aangepast Veld Toevoegen"
+
+#: views/form-designer/designer.php:102
+msgid "Payment description is required."
+msgstr "Betalingsbeschrijving is verplicht."
+
+#: views/form-designer/designer.php:106
+msgid "Price is required."
+msgstr "Prijs is verplicht."
+
+#: views/form-designer/designer.php:110
+msgid "Price has a maximum of 2 decimals. For example: 12.34"
+msgstr "De prijs bestaat uit maximaal 2 decimalen. Bijvoorbeeld: 12.34"
+
+#: views/form-designer/designer.php:114
+msgid "Title is required."
+msgstr "Titel is verplicht."
+
+#: views/form-designer/designer.php:118
+msgid "Button text is required."
+msgstr "Knop tekst is verplicht."
+
+#: views/form-designer/designer.php:176
+msgid "Field description is required."
+msgstr "Veldnaam is verplicht."
+
+#: views/form-designer/designer.php:247
+msgid "Insert Payment Form"
+msgstr "Betalingsformulier Toevoegen"
+
+#: views/form-designer/media-button.php:2
+msgid "AdCoin Payment Form Designer"
+msgstr "AdCoin Betalingsformulier Designer"
+
+#: views/form-designer/media-button.php:5
+msgid "AdCoin Payment Form"
+msgstr "AdCoin Betalingsformulier"
+
+#: views/form-designer/preview.php:1
+msgid "Preview"
+msgstr "Voortvertoning"
+
+#: views/form-designer/preview.php:7
+msgid "Title"
+msgstr "Titel"
+
+#: views/form-designer/preview.php:8
+msgid "The title shown in the top of the form."
+msgstr "De titel bovenaan het formulier."
+
+#: views/form-designer/preview.php:43
+msgid "Button text"
+msgstr "Knop tekst"
+
+#: views/form-designer/properties.php:1
+msgid "Properties"
+msgstr "Eigenschappen"
+
+#: views/form-designer/properties.php:8
+msgid "Left"
+msgstr "Links"
+
+#: views/form-designer/properties.php:9
+msgid "Center"
+msgstr "Midden"
+
+#: views/form-designer/properties.php:10
+msgid "Right"
+msgstr "Rechts"
+
+#: views/form-designer/properties.php:14
+msgid "Form alignment (Optional)"
+msgstr "De plaats van het formulier (Niet verplicht)"
+
+#: views/form-designer/properties.php:20
+msgid "Payment description"
+msgstr "Betalingsbeschrijving"
+
+#: views/form-designer/properties.php:24
+msgid "Text that will be shown on the payment page"
+msgstr "De tekst die zichtbaar is op de betaal pagina"
+
+#: views/form-designer/properties.php:30
+msgid "Price"
+msgstr "Prijs"
+
+#: views/form-designer/properties.php:31 views/form-designer/properties.php:35
+msgid "The price in ACC. Example: 12.34"
+msgstr "De prijs in ACC. Voorbeeld: 12.34"
+
+#: views/form-designer/properties.php:52
+msgid ""
+"After the customer successfully pays on the payment page, they will be "
+"redirected to this URL.<br>(The default link is the home page.)"
+msgstr ""
+"Nadat de klant successvol betaalt heeft op de betalingspagina, zal de klant "
+"naar deze link terug gestuurd worden.<br>\n"
+"(De standaard link is de home-pagina.)"
+
+#: views/form-designer/properties.php:70
+msgid ""
+"If the customer cancels the payment on the payment page, they will be "
+"redirected to this URL.<br>(The default link is the home page.)"
+msgstr ""
+"Wanneer de klant de betaling annuleert, zal de klant naar deze link terug "
+"gestuurd worden.<br>\n"
+"(De standaard link is de home-pagina.)"
+
+#: views/msg/no-api-key.php:2
+msgid "Thank you for installing AdCoin Payments!"
+msgstr "Bedankt voor het installeren van AdCoin Betalingen!"
+
+#: views/msg/no-api-key.php:3
+msgid ""
+"Before you can use the plugin. You should provide it with your AdCoin Wallet "
+"API key."
+msgstr ""
+"Voordat u de plugin kunt gebruiken, moet u eerst uw AdCoin Wallet API Key "
+"invoeren."
+
+#: views/msg/no-api-key.php:4
+msgid "Click here to go to the settings page."
+msgstr "Klik hier om naar de instellingspagina te gaan."
+
+#: views/msg/settings-updated.php:2
+msgid "Settings Updated!"
+msgstr "Uw instellingen zijn bijgewerkt!"
+
+#: views/msg/status-updated.php:2
+msgid "Payment status updated!"
+msgstr "De betalingsstatus is bijgewerkt!"
+
+#~ msgid "Insert Field"
+#~ msgstr "Veld Toevoegen"
+
+#~ msgid "Remove"
+#~ msgstr "Verwijder"
+
+#~ msgid "This is the API key from your AdCoin Wallet."
+#~ msgstr ""
+#~ "Dit is de API-sleutel van uw AdCoin Wallet.<br>\n"
+#~ "Deze is te vinden op de <a href=\"https://wallet.getadcoin.com\">AdCoin "
+#~ "Web Wallet</a> onder uw naam > \"API Key\"."
+
+#~ msgid "The price in ACC"
+#~ msgstr "De prijs in ACC"
+
+#~ msgid "<Success URL>"
+#~ msgstr "<Betaling successvol URL>"
+
+#~ msgid "<Cancel URL>"
+#~ msgstr "<Betaling annulerings URL>"
+
+#~ msgid ""
+#~ "After the customer successfully pays on the payment page, they will be "
+#~ "redirected to this URL."
+#~ msgstr ""
+#~ "Nadat de klant successvol betaalt heeft op de betalingspagina, zal de "
+#~ "klant naar deze link terug gestuurd worden.<br>\n"
+#~ "(De standaard link is de home-pagina.)"
+
+#~ msgid ""
+#~ "If the customer cancels the payment on the payment page, they will be "
+#~ "redirected to this URL."
+#~ msgstr ""
+#~ "Wanneer de klant de betaling annuleert, zal de klant naar deze link terug "
+#~ "gestuurd worden.<br>\n"
+#~ "(De standaard link is de home-pagina.)"

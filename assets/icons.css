@@ -1,0 +1,20 @@
+.adcoin-payments-icon-adcoin::before {
+	content:  "\0000a0";
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	line-height: 24px;
+	margin-right: 4px;
+	position: relative;
+	top: 0px;
+	background: url("logo_light.png") no-repeat right center transparent;
+	background-size: 100% 100%;
+}
+.adcoin-payments-icon-adcoin:hover::before {
+	background: url("logo_blue.png") no-repeat right center transparent;
+	background-size: 100% 100%;
+}
+.adcoin-payments-icon-adcoin:active::before {
+	background: url("logo_light.png") no-repeat right center transparent;
+	background-size: 100% 100%;
+}
